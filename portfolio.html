@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sipho's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="techstack.html">Tech Stack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><b><a href="https://sphola619.github.io/chef-s-favourite-meals-app/" target="_blank" rel="noopener noreferrer">Chef's Favorite Meals App:</a></b> A restaurant application which prepares a random meal from an ingredient the user inserts. <a href="https://github.com/Sphola619/chef-s-favourite-meals-app" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>          
+      <li><b><a href="https://active-nation.onrender.com/" target="_blank" rel="noopener noreferrer">Online Store Webpage:</a></b> A dynamic online store frontend using React, enabling seamless product browsing and efficient cart management. <a href="https://github.com/Sphola619/active-nation" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>
+      <li><b>iTunes Search Application:</b> Developed a full stack iTunes media search app using React and Express. <a href="https://github.com/Sphola619/itunes-search-app" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>
+      <li><b>Car Inventory Application:</b> Developed a full stack Car Inventory Application with MongoDB. <a href="https://github.com/Sphola619/car-inventory" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>
+      <li><b>Premier League Top Scorers Application:</b> Built a full stack application to search top PL goal scorers. <a href="https://github.com/Sphola619/Premier-League-Top-Scorers" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>
+      <li><b>CodePulse Survey Form:</b> Built a frontend interactive survey form using HTML and CSS. <a href="https://github.com/Sphola619/survey-form" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p style="text-align: center; color: white;">
+      © <span id="year"></span> Sipho Sisusa | Contact Me: 
+      <a href="mailto:sisusasipho@gmail.com" 
+         style="color: white; text-decoration: none;"
+         onmouseover="this.style.textDecoration='underline';" 
+         onmouseout="this.style.textDecoration='none';">
+         sisusasipho@gmail.com
+      </a>
+    </p>
+  </footer>
+  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sipho's Portfolio - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="techstack.html">Tech Stack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="images/Sipho.jpg" alt="Sipho Profile Image">
+    <h1>Welcome to My Personal Website</h1>
+    <p>I’m a Full Stack Web Developer. I create modern, responsive, and user-friendly websites and applications tailored to client needs.</p>
+  </div>
+
+  <footer>
+    <p style="text-align: center; color: white;">
+      © <span id="year"></span> Sipho Sisusa | Contact Me: 
+      <a href="mailto:sisusasipho@gmail.com" 
+         style="color: white; text-decoration: none;"
+         onmouseover="this.style.textDecoration='underline';" 
+         onmouseout="this.style.textDecoration='none';">
+         sisusasipho@gmail.com
+      </a>
+    </p>
+  </footer>
+  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+</body>
+</html>
