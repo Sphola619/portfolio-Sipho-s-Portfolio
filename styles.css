@@ -110,5 +110,35 @@ b a:hover {
            color: blue;
            text-decoration: underline;
           }
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+
+  /* NEW: flex layout for sticky footer */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* NEW: makes content grow and push footer down */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1b1b32;
+  color: white;
+  margin-top: 40px;
+
+  /* Optional: remove margin if you don’t want spacing before footer */
+  margin-top: auto; /* NEW: ensures footer is pushed down */
+}
   
   
