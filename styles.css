@@ -100,13 +100,14 @@ b {
   }
   
   /* Remove underline + inherit project color for <b> links */
-b a {
+ a {
     text-decoration: none;
     color: inherit; /* same as parent <b> (black) */
+    font-weight: bold;
     }
   
   /* Add hover effect ONLY for <b> links */
-b a:hover {
+ a:hover {
            color: blue;
            text-decoration: underline;
           }
@@ -141,12 +142,12 @@ footer {
   margin-top: auto; /* NEW: ensures footer is pushed down */
 }
 
-a {
+#links {
   text-decoration: none;
   color: white; 
   }
 
-  a:hover {
+#links:hover {
     text-decoration: underline;
    }
   
