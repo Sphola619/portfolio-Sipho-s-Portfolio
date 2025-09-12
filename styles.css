@@ -43,6 +43,7 @@ body {
     padding: 80px 20px;
     background: linear-gradient(to right, #1b1b32, #007BFF);
     color: white;
+    min-height: calc(100vh - 100px); /* Adjust based on header height */
   }
   
   .hero img {
@@ -59,6 +60,15 @@ body {
   .hero p {
     font-size: 1.2rem;
   }
+
+  img {
+    width: 200px;           /* make it square */
+    height: 200px;          /* same as width for a perfect circle */
+    border-radius: 50%;     /* makes it circular */
+    object-fit: cover;      /* ensures image fills the circle */
+    object-position: center -20px; /* slide the image up to hide degree */
+}
+
   
   /* Section styling */
   section {
