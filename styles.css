@@ -109,18 +109,27 @@ b {
     color: black;
   }
   
-  /* Remove underline + inherit project color for <b> links */
- a {
-    text-decoration: none;
-    color: inherit; /* same as parent <b> (black) */
-    font-weight: bold;
-    }
-  
-  /* Add hover effect ONLY for <b> links */
- a:hover {
-           color: blue;
-           text-decoration: underline;
-          }
+/* Remove underline + inherit project color for <b> links */
+a {
+  text-decoration: none;
+  color: inherit; /* same as parent <b> (black) */
+  font-weight: bold;
+  }
+
+/* Add hover effect ONLY for <b> links */
+a:hover {
+          color: blue;
+        }
+
+nav a:hover {
+  color: gold; /* Change color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+nav a.active {
+  text-decoration: underline; /* Keeps the underline */
+  color: gold; /* Optional: Ensure it matches the hover color */
+}
 
 /* Reset some default styles */
 body {
@@ -159,20 +168,35 @@ footer {
 
 #links:hover {
     text-decoration: underline;
-   }
+  }
 
-   .icon {
-    fill: white;
-    transition: fill 0.3s ease;
-    cursor: pointer;
-  }
-  .icon.linkedin:hover {
-    fill: #0A66C2; /* LinkedIn Blue */
-  }
-  .icon.github:hover {
-    fill: #FFD700; /* Gold */
-  }
+.icon {
+fill: white;
+transition: fill 0.3s ease;
+cursor: pointer;
+}
+
+.icon.linkedin:hover {
+  fill: #0A66C2; /* LinkedIn Blue */
+}
   
+.icon.github:hover {
+  fill: #FFD700; /* Gold */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+.hero, .about, .services, .portfolio, .tech-stack {
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease-in-out forwards; /* Fade in over 2 seconds */
+}
 
   
   
