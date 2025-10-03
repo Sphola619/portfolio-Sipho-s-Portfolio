@@ -26,9 +26,9 @@ body {
   }
   
   nav a {
-    color: gold;
+    color: skyblue;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 1.1rem;
     transition: color 0.3s ease;
   }
@@ -122,13 +122,15 @@ a:hover {
         }
 
 nav a:hover {
-  color: gold; /* Change color on hover */
+  color: skyblue; /* Change color on hover */
+  font-weight: bold; /* Makes text bold on hover */
   text-decoration: underline; /* Adds underline on hover */
 }
 
 nav a.active {
   text-decoration: underline; /* Keeps the underline */
-  color: gold; /* Optional: Ensure it matches the hover color */
+  color: skyblue; /* Change color on hover */
+  font-weight: bold; /* Keeps it bold */
 }
 
 /* Reset some default styles */
@@ -196,6 +198,76 @@ cursor: pointer;
 .hero, .about, .services, .portfolio, .tech-stack {
   opacity: 0; /* Start hidden */
   animation: fadeIn 1s ease-in-out forwards; /* Fade in over 2 seconds */
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  border-left: 5px solid #28a745; /* green accent */
+  padding-left: 10px;
+}
+
+/* Project container */
+.project {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start */
+  gap: 20px; /* Add spacing between projects */
+  margin-bottom: 50px;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-text h3 {
+  margin-top: 0;
+  color: #222;
+}
+
+.project-text a {
+  color: rgb(71, 130, 153); /* gold link */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-text a:hover {
+  text-decoration: underline;
+}
+
+/* Project image */
+.project-image img {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px; /* Ensures the height adjusts proportionally */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-top: 20px; /* Adds space above the image */
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
 }
 
   
