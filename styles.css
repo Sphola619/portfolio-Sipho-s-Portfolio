@@ -5,103 +5,111 @@ body {
     background: #f4f7fa;
     color: #333;
     line-height: 1.6;
-  }
-  
-  /* Header / Nav bar */
-  header {
-    background: #1b1b32;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-  }
-  
-  nav a {
-    color: skyblue;
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #00c853;
-  }
-  
-  /* Hero / Home page */
-  .hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #1b1b32, #007BFF);
-    color: white;
-    min-height: calc(100vh - 100px); /* Adjust based on header height */
-  }
-  
-  .hero img {
-    border-radius: 50%;
-    width: 180px;
-    margin-bottom: 20px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-  }
+}
 
-  img {
-    width: 200px;           /* make it square */
-    height: 200px;          /* same as width for a perfect circle */
-    border-radius: 50%;     /* makes it circular */
-    object-fit: cover;      /* ensures image fills the circle */
-    object-position: center -20px; /* slide the image up to hide degree */
+/* Header / Nav bar */
+header {
+  background: #1b1b32;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: skyblue;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c853;
+}
+
+/* Hero / Home page */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #1b1b32, #007BFF);
+  color: white;
+  min-height: calc(100vh - 100px); /* Adjust based on header height */
+}
+
+.hero img {
+  border-radius: 50%;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 200px;           /* make it square */
+  height: 200px;          /* same as width for a perfect circle */
+  border-radius: 50%;     /* makes it circular */
+  object-fit: cover;      /* ensures image fills the circle */
+  object-position: center -20px; /* slide the image up to hide degree */
+}
+
+.about-img {
+  width: 200px;          /* or your preferred width */
+  height: 200px;         /* keeps it square */
+  border-radius: 15px;   /* rounded corners */
+  object-fit: cover;     /* ensures the image fills the square */
+  object-position: center;
 }
 
   
-  /* Section styling */
-  section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-  }
+/* Section styling */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
   
-  section h2 {
-    color: #1b1b32;
-    margin-bottom: 20px;
-    border-left: 5px solid #00c853;
-    padding-left: 10px;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 12px;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 15px;
-    background: #1b1b32;
-    color: white;
-    margin-top: 40px;
-  }
+section h2 {
+  color: #1b1b32;
+  margin-bottom: 20px;
+  border-left: 5px solid #00c853;
+  padding-left: 10px;
+}
 
-  /* Style all project titles inside <b> */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1b1b32;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Style all project titles inside <b> */
 b {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
