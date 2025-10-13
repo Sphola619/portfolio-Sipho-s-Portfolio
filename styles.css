@@ -306,7 +306,7 @@ cursor: pointer;
   height: 25px;
   cursor: pointer;
   position: absolute;  /* top-right corner */
-  top: 30px; /* adjust based on header padding */
+  top: 40px; /* adjust based on header padding */
   right: 20px;
   z-index: 1001; /* above menu */
 }
