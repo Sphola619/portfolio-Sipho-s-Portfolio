@@ -296,6 +296,52 @@ cursor: pointer;
   background-color: rgba(49, 164, 10, 0.91); /* slightly darker green on hover */
 }
 
+/* 9. Hamburger Menu CSS */
+
+.hamburger {
+  display: none; /* show via media query */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;  /* top-right corner */
+  top: 20px;
+  right: 20px;
+  z-index: 1001; /* above menu */
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background-color: black; /* change color if needed */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px; /* hide offscreen */
+    width: 250px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 60px 20px; /* leave space for hamburger */
+    gap: 1rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    right: 0; /* slide in */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
   
   
