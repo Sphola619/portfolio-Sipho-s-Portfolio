@@ -1,148 +1,5 @@
 /* Reset some default styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7fa;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header / Nav bar */
-header {
-  background: #1b1b32;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-nav a {
-  color: skyblue;
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00c853;
-}
-
-/* Hero / Home page */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #1b1b32, #007BFF);
-  color: white;
-  min-height: calc(100vh - 100px); /* Adjust based on header height */
-}
-
-.hero img {
-  border-radius: 50%;
-  width: 180px;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
-
-img {
-  width: 200px;           /* make it square */
-  height: 200px;          /* same as width for a perfect circle */
-  border-radius: 50%;     /* makes it circular */
-  object-fit: cover;      /* ensures image fills the circle */
-  object-position: center -20px; /* slide the image up to hide degree */
-}
-
-.about-img {
-  width: 200px;          /* or your preferred width */
-  height: 200px;         /* keeps it square */
-  border-radius: 15px;   /* rounded corners */
-  object-fit: cover;     /* ensures the image fills the square */
-  object-position: center;
-}
-
-  
-/* Section styling */
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-  
-section h2 {
-  color: #1b1b32;
-  margin-bottom: 20px;
-  border-left: 5px solid #00c853;
-  padding-left: 10px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 12px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #1b1b32;
-  color: white;
-  margin-top: 40px;
-}
-
-/* Style all project titles inside <b> */
-b {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: black;
-  }
-  
-/* Remove underline + inherit project color for <b> links */
-a {
-  text-decoration: none;
-  color: inherit; /* same as parent <b> (black) */
-  font-weight: bold;
-  }
-
-/* Add hover effect ONLY for <b> links */
-a:hover {
-          color: blue;
-        }
-
-nav a:hover {
-  color: skyblue; /* Change color on hover */
-  font-weight: bold; /* Makes text bold on hover */
-  text-decoration: underline; /* Adds underline on hover */
-}
-
-nav a.active {
-  text-decoration: underline; /* Keeps the underline */
-  color: skyblue; /* Change color on hover */
-  font-weight: bold; /* Keeps it bold */
-}
-
-/* Reset some default styles */
-body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f7fa;
@@ -155,30 +12,173 @@ body {
   min-height: 100vh;
 }
 
-main {
-  flex: 1; /* NEW: makes content grow and push footer down */
+/* Header / Nav bar */
+header {
+background: #1b1b32;
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+
+nav a {
+color: skyblue;
+text-decoration: none;
+font-weight: lighter;
+font-size: 1.1rem;
+transition: color 0.3s ease;
+}
+
+nav a:hover {
+color: #00c853;
+}
+
+/* Hero / Home page */
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: linear-gradient(to right, #1b1b32, #007BFF);
+color: white;
+min-height: calc(100vh - 100px); /* Adjust based on header height */
+}
+
+.hero img {
+border-radius: 50%; /* circular only for hero/profile */
+width: 180px;
+margin-bottom: 20px;
+}
+
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 15px;
+}
+
+.hero p {
+font-size: 1.2rem;
+}
+
+/* About section image */
+.about-img {
+width: 200px;          /* or your preferred width */
+height: 200px;         /* keeps it square */
+border-radius: 15px;   /* rounded corners */
+object-fit: cover;     /* ensures the image fills the square */
+object-position: center;
+}
+
+/* Tech icons styling */
+.tech-icon {
+width: 130px;
+height: 80px;
+margin: 0 8px;
+vertical-align: middle;
+border-radius: 0; /* ensure SVG stays normal shape */
+}
+
+.stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0 30px;
+}
+
+.tech-icon {
+  height: 50px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+}
+
+
+/* Section styling */
+section {
+padding: 60px 20px;
+max-width: 900px;
+margin: auto;
+}
+
+section h2 {
+color: #1b1b32;
+margin-bottom: 20px;
+border-left: 5px solid #00c853;
+padding-left: 10px;
+}
+
+ul {
+padding-left: 20px;
+}
+
+li {
+margin-bottom: 12px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #1b1b32;
-  color: white;
-  margin-top: 40px;
+text-align: center;
+padding: 15px;
+background: #1b1b32;
+color: white;
+margin-top: auto; /* ensures footer is pushed down */
+}
 
-  /* Optional: remove margin if you don’t want spacing before footer */
-  margin-top: auto; /* NEW: ensures footer is pushed down */
+/* Style all project titles inside <b> */
+b {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Remove underline + inherit project color for <b> links */
+a {
+text-decoration: none;
+color: inherit; /* same as parent <b> (black) */
+font-weight: bold;
+}
+
+/* Add hover effect ONLY for <b> links */
+a:hover {
+color: blue;
+}
+
+nav a:hover {
+color: skyblue; /* Change color on hover */
+font-weight: bold; /* Makes text bold on hover */
+text-decoration: underline; /* Adds underline on hover */
+}
+
+nav a.active {
+text-decoration: underline; /* Keeps the underline */
+color: skyblue; 
+font-weight: bold; 
+}
+
+/* Main content flex grow */
+main {
+flex: 1; 
 }
 
 #links {
-  text-decoration: none;
-  color: white; 
-  }
+text-decoration: none;
+color: white; 
+}
 
 #links:hover {
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
 .icon {
 fill: white;
@@ -187,164 +187,160 @@ cursor: pointer;
 }
 
 .icon.linkedin:hover {
-  fill: #0A66C2; /* LinkedIn Blue */
+fill: #0A66C2; /* LinkedIn Blue */
 }
-  
+
 .icon.github:hover {
-  fill: #FFD700; /* Gold */
+fill: #FFD700; /* Gold */
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+  opacity: 0;
 }
-  
+to {
+  opacity: 1;
+}
+}
+
 .hero, .about, .services, .portfolio, .tech-stack {
-  opacity: 0; /* Start hidden */
-  animation: fadeIn 1s ease-in-out forwards; /* Fade in over 2 seconds */
+opacity: 0; 
+animation: fadeIn 1s ease-in-out forwards;
 }
 
 /* Portfolio Section */
 .portfolio-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+padding: 60px 20px;
+max-width: 1100px;
+margin: 0 auto;
 }
 
 .portfolio-section h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  border-left: 5px solid #28a745; /* green accent */
-  padding-left: 10px;
+font-size: 2rem;
+margin-bottom: 40px;
+border-left: 5px solid #28a745; /* green accent */
+padding-left: 10px;
 }
 
 /* Project container */
 .project {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: flex-start; /* Align items to the start */
-  gap: 20px; /* Add spacing between projects */
-  margin-bottom: 50px;
+display: flex;
+flex-direction: column; 
+align-items: flex-start; 
+gap: 20px; 
+margin-bottom: 50px;
 }
 
 .project-text {
-  flex: 1;
+flex: 1;
 }
 
 .project-text h3 {
-  margin-top: 0;
-  color: #222;
+margin-top: 0;
+color: #222;
 }
 
 .project-text a {
-  color: rgb(71, 130, 153); /* gold link */
-  font-weight: bold;
-  text-decoration: none;
+color: rgb(71, 130, 153); 
+font-weight: bold;
+text-decoration: none;
 }
 
 .project-text a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Project image */
 .project-image img {
-  width: 100%;
-  max-width: 1000px;
-  height: 500px; /* Ensures the height adjusts proportionally */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  margin-top: 20px; /* Adds space above the image */
+width: 100%;
+max-width: 1000px;
+height: 500px; 
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+margin-top: 20px; 
 }
 
 .project-image img:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .project {
-    flex-direction: column;
-    text-align: center;
-  }
+.project {
+  flex-direction: column;
+  text-align: center;
+}
 
-  .project-image img {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
+.project-image img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
 }
 
 /* Download Resume Button */
 .download-btn {
-  margin-top: 20px;
-  padding: 30px 35px;  /* bigger padding = bigger button */
-  font-size: 18px;     /* larger text */
-  background-color: rgb(56, 203, 7);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;  /* slightly rounder corners */
-  cursor: pointer;
-  transition: background-color 0.3s;
+margin-top: 20px;
+padding: 30px 35px;  
+font-size: 18px;     
+background-color: rgb(56, 203, 7);
+color: white;
+font-weight: bold;
+border: none;
+border-radius: 8px;  
+cursor: pointer;
+transition: background-color 0.3s;
 }
 
 .download-btn:hover {
-  background-color: rgba(49, 164, 10, 0.91); /* slightly darker green on hover */
+background-color: rgba(49, 164, 10, 0.91); 
 }
 
-/* 9. Hamburger Menu CSS */
-
+/* Hamburger Menu CSS */
 .hamburger {
-  display: none; /* show via media query */
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  position: absolute;  /* top-right corner */
-  top: 40px; /* adjust based on header padding */
-  right: 20px;
-  z-index: 1001; /* above menu */
+display: none; 
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 25px;
+cursor: pointer;
+position: absolute;  
+top: 40px; 
+right: 20px;
+z-index: 1001; 
 }
 
 .hamburger span {
-  display: block;
-  height: 4px;
-  background-color: black; /* change color if needed */
-  border-radius: 2px;
-  transition: all 0.3s ease;
+display: block;
+height: 4px;
+background-color: black; 
+border-radius: 2px;
+transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: #f9f9f9; /* default color when closed */
-    padding: 60px 20px;
-    gap: 1rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    z-index: 1000;
-  }
-  
-  /* When menu is open */
-  nav ul.active {
-    transform: translateX(0);
-    background: #1b1b32; /* change this to any color you like */
-  }    
-
-  .hamburger {
-    display: flex;
-  }
+nav ul {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #f9f9f9; 
+  padding: 60px 20px;
+  gap: 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
 }
 
-  
-  
+/* When menu is open */
+nav ul.active {
+  transform: translateX(0);
+  background: #1b1b32; 
+}    
+
+.hamburger {
+  display: flex;
+}
+}
