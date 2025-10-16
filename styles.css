@@ -350,13 +350,6 @@ nav ul.active {
 .portfolio-section {
   padding: 80px 20px;
   background-color: #f7f9fc;
-  text-align: center;
-}
-
-.portfolio-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #222;
 }
 
 .projects-container {
