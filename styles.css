@@ -284,7 +284,32 @@ nav a.active {
   transition: all 0.3s ease;
 }
 
-/* Mobile nav & Fiverr icon */
+/* Floating Fiverr Icon */
+.floating-fiverr {
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  z-index: 1000;
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-fiverr img {
+  width: 200px;
+  height: 200px;
+}
+
+.floating-fiverr:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+/* Fiverr button — hidden everywhere by default */
+.fiverr-btn-mobile {
+  display: none;
+}
+
+/* Mobile nav & Fiverr button */
 @media (max-width: 768px) {
   nav ul {
     display: flex;
@@ -316,8 +341,8 @@ nav a.active {
     display: none;
   }
 
-  /* Fiverr button inside hamburger menu */
-  .fiverr-btn-mobile {
+  /* ✅ Show Fiverr button only when menu is active */
+  nav ul.active .fiverr-btn-mobile {
     display: block;
     margin-top: auto;
     text-align: center;
@@ -339,28 +364,4 @@ nav a.active {
   .fiverr-btn-mobile button:hover {
     background-color: #17a566;
   }
-}
-
-/* Floating Fiverr Icon */
-.floating-fiverr {
-  position: fixed;
-  bottom: 0px;
-  left: 10px;
-  z-index: 1000;
-  display: inline-block;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.floating-fiverr img {
-  width: 200px;
-  height: 200px;
-}
-
-.floating-fiverr:hover {
-  transform: scale(1.15);
-  opacity: 1;
-}
-
-.fiverr-btn-mobile {
-  display: none;
 }
