@@ -274,8 +274,9 @@ transform: scale(1.05);
 /* --- Mobile layout: stack all project cards vertically --- */
 @media (max-width: 768px) {
   .projects-container {
-    display: flex;
+    display: grid;
     flex-direction: column;
+    grid-template-columns: 1fr;  /* 1 card per row on small screens */
     align-items: center;
     gap: 25px;
     padding: 0 12px;
