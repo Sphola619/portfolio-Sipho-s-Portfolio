@@ -379,11 +379,6 @@ nav ul.active {
   padding: 0 10px;             /* slight padding on sides */
 }
 
-.project-card {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
 
 
 }
