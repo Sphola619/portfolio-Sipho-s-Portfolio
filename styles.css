@@ -344,19 +344,9 @@ nav ul.active {
   display: flex;
 }
 
-/* Floating Fiverr Icon Mobile */
+/* Hide Fiverr icon on mobile */
 .floating-fiverr {
-  position: fixed;
-  top: 0px;       /* distance from bottom */
-  left: 0px;         /* distance from left */
-  z-index: 1000;      /* ensures it stays on top */
-  display: inline-block;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.floating-fiverr img {
-  width: 100px;        /* visible and clear */
-  height: 100px;
+  display: none;
 }
 
 }
