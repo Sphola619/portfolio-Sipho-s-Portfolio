@@ -359,11 +359,6 @@ nav ul.active {
   height: 100px;
 }
 
-/* Hide header on mobile */
-header {
-  display: none;
-}
-
 }
 
 /* Project Card Layout and Styling */
