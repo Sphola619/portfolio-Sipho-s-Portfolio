@@ -48,6 +48,13 @@ nav a:hover {
   color: #00c853;
 }
 
+/* Active page link */
+nav a.active {
+  color: skyblue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* Hero / Home page */
 .hero {
   text-align: center;
@@ -141,12 +148,6 @@ nav a:hover {
   color: skyblue;
   font-weight: bold;
   text-decoration: underline;
-}
-
-nav a.active {
-  text-decoration: underline;
-  color: skyblue;
-  font-weight: bold;
 }
 
 /* Social Icons */
@@ -282,29 +283,27 @@ nav a.active {
 /* Floating Fiverr Icon (desktop only) */
 .floating-fiverr {
   position: fixed;
-  bottom: 0px;
-  left: 10px;
+  bottom: 20px;       /* slightly above the edge */
+  left: 20px;         /* space from the left edge */
   z-index: 1000;
   display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;       /* slightly transparent until hover */
 }
 
 .floating-fiverr img {
-  width: 200px;
-  height: 200px;
+  width: 240px;       /* bigger logo */
+  height: auto;
+  max-width: 100%;
+  cursor: pointer;
 }
 
 .floating-fiverr:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   opacity: 1;
 }
 
-/* Fiverr mobile link — hidden by default */
-.fiverr-mobile {
-  display: none;
-}
-
-/* Mobile navigation & Fiverr link */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   nav ul {
     display: flex;
@@ -331,31 +330,15 @@ nav a.active {
     display: flex;
   }
 
-  .floating-fiverr,
-  .floating-fiverr img {
+  /* Hide Fiverr icon on mobile */
+  .floating-fiverr {
     display: none;
   }
 
-  /* Show Fiverr link only when menu is active */
-  nav ul.active .fiverr-mobile {
-    display: block;
-    text-align: center;
-    margin-top: auto;
-  }
-
-  .fiverr-mobile a {
-    display: inline-block;
-    background-color: #1dbf73;
-    color: white;
+  /* Keep active link visible on mobile */
+  nav a.active {
+    color: skyblue;
     font-weight: bold;
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .fiverr-mobile a:hover {
-    background-color: #17a566;
-    transform: scale(1.05);
+    text-decoration: underline;
   }
 }
