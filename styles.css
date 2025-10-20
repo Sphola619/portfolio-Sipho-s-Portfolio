@@ -271,30 +271,44 @@ margin-top: 20px;
 transform: scale(1.05);
 }
 
+/* --- Mobile layout: stack all project cards vertically --- */
 @media (max-width: 768px) {
   .projects-container {
     display: flex;
-    flex-direction: column; /* Stack the cards vertically */
-    align-items: center; /* Center the cards horizontally */
-    gap: 20px; /* Add spacing between cards */
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 12px;
   }
 
   .project-card {
-    width: 90%; /* Make the cards smaller for mobile */
-    max-width: 400px; /* Set a maximum width */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
-  }
-
-  .project-image img {
-    width: 100%; /* Ensure images fit within the card */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 340px;  /* good size for mobile screens */
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 12px;
   }
 
   .project-text {
-    padding: 10px; /* Add padding for better readability */
+    padding: 15px;
+  }
+
+  .project-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-text p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 150px;     /* smaller image height for phones */
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
-
 
 
 /* Download Resume Button */
