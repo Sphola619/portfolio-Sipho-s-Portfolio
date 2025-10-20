@@ -18,7 +18,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
 /* Header / Nav bar */
 header {
 background: #1b1b32;
@@ -55,11 +54,11 @@ text-align: center;
 padding: 80px 20px;
 background: linear-gradient(to right, #1b1b32, #007BFF);
 color: white;
-min-height: calc(100vh - 100px); /* Adjust based on header height */
+min-height: calc(100vh - 100px);
 }
 
 .hero img {
-border-radius: 50%; /* circular only for hero/profile */
+border-radius: 50%;
 width: 180px;
 margin-bottom: 20px;
 }
@@ -75,10 +74,10 @@ font-size: 1.2rem;
 
 /* About section image */
 .about-img {
-width: 200px;          /* or your preferred width */
-height: 200px;         /* keeps it square */
-border-radius: 15px;   /* rounded corners */
-object-fit: cover;     /* ensures the image fills the square */
+width: 200px;
+height: 200px;
+border-radius: 15px;
+object-fit: cover;
 object-position: center;
 }
 
@@ -88,7 +87,7 @@ width: 130px;
 height: 80px;
 margin: 0 8px;
 vertical-align: middle;
-border-radius: 0; /* ensure SVG stays normal shape */
+border-radius: 0;
 }
 
 .stack-row {
@@ -109,7 +108,6 @@ border-radius: 0; /* ensure SVG stays normal shape */
   transform: scale(1.1);
 }
 
-
 /* Section styling */
 section {
 padding: 60px 20px;
@@ -124,67 +122,36 @@ border-left: 5px solid #00c853;
 padding-left: 10px;
 }
 
-ul {
-padding-left: 20px;
-}
-
-li {
-margin-bottom: 12px;
-}
-
 /* Footer */
 footer {
 text-align: center;
 padding: 15px;
 background: #1b1b32;
 color: white;
-margin-top: auto; /* ensures footer is pushed down */
+margin-top: auto;
 }
 
-/* Style all project titles inside <b> */
-b {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: black;
-}
-
-/* Remove underline + inherit project color for <b> links */
+/* Links & hover effects */
 a {
 text-decoration: none;
-color: inherit; /* same as parent <b> (black) */
+color: inherit;
 font-weight: bold;
 }
 
-/* Add hover effect ONLY for <b> links */
 a:hover {
 color: blue;
 }
 
 nav a:hover {
-color: skyblue; /* Change color on hover */
-font-weight: bold; /* Makes text bold on hover */
-text-decoration: underline; /* Adds underline on hover */
+color: skyblue;
+font-weight: bold;
+text-decoration: underline;
 }
 
 nav a.active {
-text-decoration: underline; /* Keeps the underline */
-color: skyblue; 
-font-weight: bold; 
-}
-
-/* Main content flex grow */
-main {
-flex: 1; 
-}
-
-#links {
-text-decoration: none;
-color: white; 
-}
-
-#links:hover {
-  text-decoration: underline;
+text-decoration: underline;
+color: skyblue;
+font-weight: bold;
 }
 
 .icon {
@@ -194,236 +161,49 @@ cursor: pointer;
 }
 
 .icon.linkedin:hover {
-fill: #0A66C2; /* LinkedIn Blue */
+fill: #0A66C2;
 }
 
 .icon.github:hover {
-fill: #FFD700; /* Gold */
+fill: #FFD700;
 }
 
+/* Fade animation */
 @keyframes fadeIn {
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
+from { opacity: 0; }
+to { opacity: 1; }
 }
 
 .hero, .about, .services, .portfolio, .tech-stack {
-opacity: 0; 
+opacity: 0;
 animation: fadeIn 1s ease-in-out forwards;
 }
 
 /* Portfolio Section */
 .portfolio-section {
-padding: 60px 20px;
-max-width: 1100px;
-margin: 0 auto;
-}
-
-.portfolio-section h2 {
-font-size: 2rem;
-margin-bottom: 40px;
-border-left: 5px solid #28a745; /* green accent */
-padding-left: 10px;
-}
-
-/* Project container */
-.project {
-display: flex;
-flex-direction: column; 
-align-items: flex-start; 
-gap: 20px; 
-margin-bottom: 50px;
-}
-
-.project-text {
-flex: 1;
-}
-
-.project-text h3 {
-margin-top: 0;
-color: #222;
-}
-
-.project-text a {
-color: rgb(71, 130, 153); 
-font-weight: bold;
-text-decoration: none;
-}
-
-.project-text a:hover {
-text-decoration: underline;
-}
-
-/* Project image */
-.project-image img {
-width: 100%;
-max-width: 1000px;
-height: 500px; 
-border-radius: 8px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-margin-top: 20px; 
-}
-
-.project-image img:hover {
-transform: scale(1.05);
-}
-
-/* --- Mobile layout: stack all project cards vertically --- */
-@media (max-width: 768px) {
-  .projects-container {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr;  /* 1 card per row on small screens */
-    align-items: center;
-    gap: 25px;
-    padding: 0 12px;
-    height: auto; /* Ensure the height adjusts to fit all content */
-    overflow: visible; /* Prevent content from being hidden */
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 340px;  /* good size for mobile screens */
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 12px;
-  }
-
-  .project-text {
-    padding: 15px;
-  }
-
-  .project-text h3 {
-    font-size: 1.1rem;
-  }
-
-  .project-text p {
-    font-size: 0.9rem;
-    line-height: 1.45;
-  }
-
-  .project-image img {
-    width: 100%;
-    height: 150px;     /* smaller image height for phones */
-    object-fit: cover;
-    border-radius: 10px;
-  }
-}
-
-
-/* Download Resume Button */
-.download-btn {
-margin-top: 20px;
-padding: 30px 35px;  
-font-size: 18px;     
-background-color: rgb(56, 203, 7);
-color: white;
-font-weight: bold;
-border: none;
-border-radius: 8px;  
-cursor: pointer;
-transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-background-color: rgba(49, 164, 10, 0.91); 
-}
-
-/* Hamburger Menu CSS */
-.hamburger {
-display: none; 
-flex-direction: column;
-justify-content: space-between;
-width: 30px;
-height: 25px;
-cursor: pointer;
-position: absolute;  
-top: 40px; 
-right: 20px;
-z-index: 1001; 
-}
-
-.hamburger span {
-display: block;
-height: 4px;
-background-color: black; 
-border-radius: 2px;
-transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-nav ul {
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100vh;
-  background-color: #f9f9f9; 
-  padding: 60px 20px;
-  gap: 1rem;
-  transform: translateX(100%);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  z-index: 1000;
-}
-
-/* When menu is open */
-nav ul.active {
-  transform: translateX(0);
-  background: #1b1b32; 
-}    
-
-.hamburger {
-  display: flex;
-}
-
-/* Hide Fiverr icon on mobile */
-.floating-fiverr {
-  display: none;
-}
-
-.floating-fiverr img {
-  display: none;
-}
-
-/* Make portfolio cards fit properly on mobile */
-.projects-container {
-  grid-template-columns: 1fr;  /* 1 card per row on small screens */
-  gap: 20px;
-  padding: 0 10px;             /* slight padding on sides */
-}
-
-
-
-}
-
-/* Project Card Layout and Styling */
-
-.portfolio-section {
   padding: 80px 20px;
   background-color: #f7f9fc;
 }
 
+/* ✅ One column layout for ALL screen sizes */
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
+/* Each project card now takes full width (vertically stacked) */
 .project-card {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  width: 100%;
+  text-align: center;
 }
 
 .project-card:hover {
@@ -433,7 +213,7 @@ nav ul.active {
 
 .project-image img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -462,29 +242,92 @@ nav ul.active {
 
 .project-text a:hover {
   color: #012a57;
-  text-decoration: none;
 }
 
-.icon.linkedin {
-  margin-right: 5px; /* more space to the right of LinkedIn icon */
+/* Download Resume Button */
+.download-btn {
+  margin-top: 20px;
+  padding: 30px 35px;
+  font-size: 18px;
+  background-color: rgb(56, 203, 7);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.icon.github {
-  margin-left: 5px; /* adds matching space to left of GitHub icon */
+.download-btn:hover {
+  background-color: rgba(49, 164, 10, 0.91);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile nav & Fiverr icon */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    gap: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    transform: translateX(0);
+    background: #1b1b32;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .floating-fiverr,
+  .floating-fiverr img {
+    display: none;
+  }
 }
 
 /* Floating Fiverr Icon */
 .floating-fiverr {
   position: fixed;
-  bottom: 0px;       /* distance from bottom */
-  left: 10px;         /* distance from left */
-  z-index: 1000;      /* ensures it stays on top */
+  bottom: 0px;
+  left: 10px;
+  z-index: 1000;
   display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .floating-fiverr img {
-  width: 200px;        /* visible and clear */
+  width: 200px;
   height: 200px;
 }
 
