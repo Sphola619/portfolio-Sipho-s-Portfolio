@@ -12,6 +12,13 @@ body {
   min-height: 100vh;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
 /* Header / Nav bar */
 header {
 background: #1b1b32;
@@ -352,6 +359,20 @@ nav ul.active {
 .floating-fiverr img {
   display: none;
 }
+
+/* Make portfolio cards fit properly on mobile */
+.projects-container {
+  grid-template-columns: 1fr;  /* 1 card per row on small screens */
+  gap: 20px;
+  padding: 0 10px;             /* slight padding on sides */
+}
+
+.project-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 
 }
 
