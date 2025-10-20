@@ -285,6 +285,45 @@ transform: scale(1.05);
 }
 }
 
+/* Mobile-friendly portfolio layout */
+@media (max-width: 768px) {
+  /* Stack all project cards vertically */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  /* Make each project card take full width */
+  .project-card {
+    width: 100%;
+    max-width: 350px; /* keeps them readable and centered */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Reduce image height for smaller screens */
+  .project-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Adjust heading and text size */
+  .project-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+
 /* Download Resume Button */
 .download-btn {
 margin-top: 20px;
