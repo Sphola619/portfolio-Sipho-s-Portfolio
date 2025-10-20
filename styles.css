@@ -335,3 +335,37 @@ animation: fadeIn 1s ease-in-out forwards;
   transform: scale(1.15);
   opacity: 1;
 }
+
+/* Fiverr button inside hamburger menu */
+.fiverr-btn-mobile {
+  display: none; /* hidden by default (desktop) */
+  position: fixed;
+  bottom: 30px;   /* moves it well below the menu links */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1100;  /* stays above the nav */
+}
+
+.fiverr-btn-mobile button {
+  background-color: #1dbf73; /* Fiverr green */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fiverr-btn-mobile button:hover {
+  background-color: #17a566;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+  .fiverr-btn-mobile {
+    display: block;
+  }
+}
