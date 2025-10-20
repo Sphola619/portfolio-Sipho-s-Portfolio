@@ -349,6 +349,10 @@ nav ul.active {
   display: none;
 }
 
+.floating-fiverr img {
+  display: none;
+}
+
 }
 
 /* Project Card Layout and Styling */
