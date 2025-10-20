@@ -274,16 +274,16 @@ transform: scale(1.05);
 /* --- Mobile layout: stack all project cards vertically --- */
 @media (max-width: 768px) {
   .projects-container {
-    display: grid;
-    grid-template-columns: 1fr;   /* <-- This forces ONE column */
-    gap: 20px;
-    padding: 0 10px;
-    max-width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 12px;
   }
 
   .project-card {
     width: 100%;
+    max-width: 340px;  /* good size for mobile screens */
     box-sizing: border-box;
     text-align: center;
     border-radius: 12px;
@@ -309,7 +309,6 @@ transform: scale(1.05);
     border-radius: 10px;
   }
 }
-
 
 
 /* Download Resume Button */
