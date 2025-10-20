@@ -280,6 +280,8 @@ transform: scale(1.05);
     align-items: center;
     gap: 25px;
     padding: 0 12px;
+    height: auto; /* Ensure the height adjusts to fit all content */
+    overflow: visible; /* Prevent content from being hidden */
   }
 
   .project-card {
