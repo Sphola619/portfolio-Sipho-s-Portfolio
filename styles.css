@@ -342,7 +342,7 @@ nav a.active {
   }
 
   /* ✅ Show Fiverr button only when menu is active */
-  nav ul.active .fiverr-btn-mobile {
+  nav ul.active > .fiverr-btn-mobile {
     display: block;
     margin-top: auto;
     text-align: center;
