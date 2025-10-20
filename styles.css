@@ -409,3 +409,31 @@ nav ul.active {
   color: #012a57;
   text-decoration: none;
 }
+
+.icon.linkedin {
+  margin-right: 5px; /* more space to the right of LinkedIn icon */
+}
+
+.icon.github {
+  margin-left: 5px; /* adds matching space to left of GitHub icon */
+}
+
+/* Floating Fiverr Icon */
+.floating-fiverr {
+  position: fixed;
+  bottom: 0px;       /* distance from bottom */
+  left: 10px;         /* distance from left */
+  z-index: 1000;      /* ensures it stays on top */
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-fiverr img {
+  width: 200px;        /* visible and clear */
+  height: 200px;
+}
+
+.floating-fiverr:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
