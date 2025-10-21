@@ -342,3 +342,35 @@ nav a:hover {
     text-decoration: underline;
   }
 }
+
+/* Fiverr button on Services page — hidden on desktop */
+.fiverr-btn-mobile-page {
+  display: none; /* hidden by default */
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Style the button itself */
+.fiverr-btn-mobile-page a {
+  display: inline-block;
+  background-color: #1dbf73; /* Fiverr green */
+  color: white;
+  font-weight: bold;
+  padding: 12px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fiverr-btn-mobile-page a:hover {
+  background-color: #17a566;
+  transform: scale(1.05);
+}
+
+/* ✅ Show only on mobile */
+@media (max-width: 768px) {
+  .fiverr-btn-mobile-page {
+    display: block;
+  }
+}
+
